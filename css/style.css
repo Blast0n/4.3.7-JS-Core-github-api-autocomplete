@@ -1,43 +1,64 @@
-
-html{
-	box-sizing: border-box;
+.container {
+  margin: 50px auto;
+  padding: 50px;
+  width: 661px;
+  min-height: 763px;
+  background: #C4C4C4;
+  font-size: 28px;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-
-@font-face {
-  font-family: "TT Lakes Regular";
-  src: url("../fonts/TTLakes-Regular.eot");
-  src: url("../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/TTLakes-Regular.woff") format("woff"),
-    url("../fonts/TTLakes-Regular.ttf") format("truetype");
-  font-weight: normal;
+.container .input {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #1B1C21;
+  font-family: TT Lakes Regular;
+  font-size: 28px;
   font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
 }
-
-@font-face {
-  font-family: "TT Lakes Medium";
-  src: url("../fonts/TTLakes-Medium.eot");
-  src: url("../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/TTLakes-Medium.woff") format("woff"),
-    url("../fonts/TTLakes-Medium.ttf") format("truetype");
-  font-weight: normal;
+.container .options {
+  width: 80%;
+  margin: 0 auto;
+  font-family: TT Lakes Regular;
+  font-size: 24px;
   font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 133.333% */
+  letter-spacing: -0.6px;
 }
-
-@font-face {
-  font-family: "TT Lakes Bold";
-  src: url("../fonts/TTLakes-Bold.eot");
-  src: url("../fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/TTLakes-Bold.woff") format("woff"),
-    url("../fonts/TTLakes-Bold.ttf") format("truetype");
-  font-weight: normal;
+.container .options__item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #000;
+  background: #E3E3E3;
+}
+.container .favorites {
+  width: 80%;
+  margin: 20px auto;
+  font-family: TT Lakes Regular;
+  font-size: 24px;
   font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 133.333% */
+  letter-spacing: -0.6px;
+}
+.container .favorites__item {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #000;
+  background: #E27BEB;
+}
+.container .favorites .item__close {
+  position: absolute;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  bottom: 16px;
+  right: 26px;
+  background: url("../img/close.svg") center no-repeat;
+  background-size: 70px 70px;
 }
